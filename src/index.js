@@ -1,6 +1,6 @@
-"use strict";
-
-module.exports = function() {
+(function($) {
+    "use strict";
+    
     $(document).on('click', '[laravel-logout]', function() {
         let token   = document.head.querySelector('meta[name="csrf-token"]');
         let action  = this.dataset.action ? this.dataset.action : '/logout';
@@ -14,7 +14,7 @@ module.exports = function() {
             let input = document.createElement('input');
             input.setAttribute('type', 'hidden');
             input.setAttribute('name', '_token');
-            input.setAttribute('value', csrf_token);
+            input.setAttribute('value', token.content);
 
             form.appendChild(input);
             document.body.appendChild(form);
@@ -23,4 +23,4 @@ module.exports = function() {
             console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
         }
     });
-}
+})(jQuery);
