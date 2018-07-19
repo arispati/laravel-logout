@@ -1,0 +1,27 @@
+{
+  "name": "laravel-logout",
+  "version": "1.0.0",
+  "description": "Package for Laravel logout",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arispati/laravel-logout.git"
+  },
+  "keywords": [
+    "laravel-logout",
+    "laravel",
+    "logout"
+  ],
+  "author": "Muhamad Aris <masarispati@gmail.com> (http://muhamadaris.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arispati/laravel-logout/issues"
+  },
+  "homepage": "https://github.com/arispati/laravel-logout#readme",
+  "engines": {
+    "node": ">=6.0.0"
+  }
+}
